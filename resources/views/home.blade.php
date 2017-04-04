@@ -24,5 +24,12 @@
             modo typi, qui nunc nobis videntur parum clari, fiant sollemnes
             in futurum.
         </p>
+        <ul>
+            @for($i = 0; $i < 5; $i++)
+                @if ($i % 2 === 0)
+                    <li>Iteration {{ $i + 1}}</li>
+                @endif
+            @endfor
+        </ul>
     </div>
 @endsection
